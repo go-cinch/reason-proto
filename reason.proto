@@ -10,7 +10,7 @@ option objc_class_prefix = "APIReasonV1";
 
 enum ErrorReason {
   // default reason
-  option (errorsg.default_code) = 500;
+  option (errors.default_code) = 500;
 
   TOO_MANY_REQUESTS = 0 [(errors.code) = 429];
   ILLEGAL_PARAMETER = 1 [(errors.code) = 400];
